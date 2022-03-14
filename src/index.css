@@ -11,3 +11,106 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+
+
+* {
+  box-sizing: border-box;
+  font-family: 'Karla', sans-serif;
+  color: #293264;
+}
+
+body {
+  background-color: #F5F7FB;
+}
+
+.startPage {
+  display: flex;
+  flex-direction: column;
+  height: 550px;
+  flex-basis: 550px;
+  justify-content: center;
+}
+
+.startPage--title{
+  align-self: center;
+}
+
+.startPage--button {
+  color: white;
+  background: #4D5B9E;
+  border-radius: 15px;
+  width: 193px;
+  height: 52px;
+  font-family: 'Karla', sans-serif;
+  font-weight: 500;
+  align-self: center;
+  border: 0;
+}
+
+.triviaPage--button {
+  color: white;
+  background: #4D5B9E;
+  border-radius: 15px;
+  width: 193px;
+  height: 52px;
+  font-family: 'Karla', sans-serif;
+  font-weight: 500;
+  align-self: center;
+  border: 0;
+  margin: 0 auto 0 35%;
+}
+
+.choice {
+  display: inline-block;
+}
+
+
+.choice--button {
+  border: 0.794239px solid #293264;
+  border-radius: 8px;
+  background-color: transparent;
+  padding: 5px 10px;
+  margin: 5px;
+  font-size: 10px;
+}
+
+.choice--button--selected {
+  border: 0;
+  border-radius: 8px;
+  background-color: #D6DBF5;
+  padding: 5px 10px;
+  margin: 5px;
+  font-size: 10px;
+}
+
+.choice--button--correct {
+  border: 0;
+  border-radius: 8px;
+  background-color: #94D7A2;
+  padding: 5px 10px;
+  margin: 5px;
+  font-size: 10px;
+}
+
+.choice--button--incorrect {
+  border: 0;
+  border-radius: 8px;
+  background-color: #F8BCBC;
+  padding: 5px 10px;
+  margin: 5px;
+  font-size: 10px;
+  color: #293264;
+  opacity: 0.5;
+}
+
+.choice--button--checkAnswer {
+  border: 0.794239px solid #4D5B9E;
+  opacity: 0.5;
+  border-radius: 8px;
+  background-color: transparent;
+  padding: 5px 10px;
+  margin: 5px;
+  font-size: 10px;
+}
