@@ -1,6 +1,20 @@
-# Getting Started with Create React App
+# Getting Started with World Quizzicle App, Trivia Game!
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## To run this in your local environment:
+
+In your local environment, using Github's CLI:
+
+### `gh repo fork https://github.com/jhruvsphysics/trivia-game --clone`
+
+Go into the project directory, and run:
+
+### `npm start`
+
+Enjoy!
+
+<img src="https://github.com/jhruvsphysics/readme-assets/blob/main/projects/quizzicle_dont_get_got.gif">
 
 ## Available Scripts
 
@@ -13,6 +27,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
+
 
 ### `npm test`
 
