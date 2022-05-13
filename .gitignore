@@ -7,6 +7,9 @@
 
 # testing
 /coverage
+/src/App.test.js
+/src/reportWebVitals.js
+/src/setupTests.js
 
 # production
 /build

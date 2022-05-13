@@ -1,3 +1,7 @@
+html {
+    font-size: 120%;
+}
+
 * {
     box-sizing: border-box;
     font-family: 'Karla', sans-serif;
@@ -11,40 +15,68 @@ body {
 .startPage {
     display: flex;
     flex-direction: column;
-    height: 550px;
+    height: 700px;
     flex-basis: 550px;
     justify-content: center;
+    background-image: url("./getgot.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
 }
 
 .startPage--title{
     align-self: center;
+    color: #4d9e6d;
+    font-weight: 600;
+    font-size: 4rem;
 }
-
+.startPage--rule {
+    max-width: 500px;
+    text-align: center;
+    align-self: center;
+    color: white;
+    background-color: #4D5B9E;
+    border-radius: 15px;
+    padding: 15px 30px 15px 30px;
+}
 .startPage--button {
     color: white;
     background: #4D5B9E;
-    border-radius: 15px;
-    width: 193px;
-    height: 52px;
+    border-radius: 20px;
+    width: 270px;
+    height: 100px;
     font-family: 'Karla', sans-serif;
-    font-weight: 500;
+    font-weight: 600;
+    font-size: 1.5rem;
     align-self: center;
     border: 0;
 }
 
-.triviaPage--button {
+.triviaPage {
+    max-width: 1000px;
+}
+
+.triviaPage--next-button,
+.triviaPage--restart-button,
+.triviaPage--check-button {
     color: white;
     background: #4D5B9E;
     border-radius: 15px;
-    width: 193px;
-    height: 52px;
+    width: 230px;
+    height: 80px;
+    font-size: 1rem;
     font-family: 'Karla', sans-serif;
     font-weight: 500;
     align-self: center;
     border: 0;
-    margin: 0 auto 0 35%;
 }
 
+.triviaPage--life {
+    height: 40px;
+}
+.triviaPage--life > img {
+    height: 100%;
+}
 .choice {
     display: inline-block;
 }
@@ -54,36 +86,36 @@ body {
     border: 0.794239px solid #293264;
     border-radius: 8px;
     background-color: transparent;
-    padding: 5px 10px;
+    padding: 10px 15px;
     margin: 5px;
-    font-size: 10px;
+    font-size: 0.75rem;
 }
 
 .choice--button--selected {
     border: 0;
     border-radius: 8px;
     background-color: #D6DBF5;
-    padding: 5px 10px;
+    padding: 10px 15px;
     margin: 5px;
-    font-size: 10px;
+    font-size: 0.75rem;
 }
 
 .choice--button--correct {
     border: 0;
     border-radius: 8px;
     background-color: #94D7A2;
-    padding: 5px 10px;
+    padding: 10px 15px;
     margin: 5px;
-    font-size: 10px;
+    font-size: 0.75rem;
 }
 
 .choice--button--incorrect {
     border: 0;
     border-radius: 8px;
     background-color: #F8BCBC;
-    padding: 5px 10px;
+    padding: 10px 15px;
     margin: 5px;
-    font-size: 10px;
+    font-size:  0.75rem;
     color: #293264;
     opacity: 0.5;
 }
@@ -93,7 +125,38 @@ body {
     opacity: 0.5;
     border-radius: 8px;
     background-color: transparent;
-    padding: 5px 10px;
+    padding: 10px 15px;
     margin: 5px;
-    font-size: 10px;
+    font-size:  0.75rem;
+}
+
+@media all and (max-width: 750px) {
+    html {
+        font-size: 80%;
+    }
+    .startPage {
+        height: 550px;
+    }
+    .startPage--title{
+        font-size: 3rem;
+    }
+    .startPage--button {
+        border-radius: 25px;
+        font-size: 2rem;
+    }
+    .triviaPage--next-button,
+    .triviaPage--restart-button,
+    .triviaPage--check-button {
+        border-radius: 15px;
+        width: 130px;
+        height: 50px;
+        font-size: 1rem;
+    }
+    .triviaPage--restart-button {
+        width: 75px;
+    }
+    .triviaPage--next-button {
+        width: 75px;
+        margin-right: 25px;
+    }
 }

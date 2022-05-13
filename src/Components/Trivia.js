@@ -11,10 +11,21 @@ export default function Trivia(props) {
                     checkAnswerState={props.checkAnswerState}
                     handleClick={props.updateScore}/>
     )
+    
+    // function correctAnswer() {
+    //     let correct = ""
+    //     if (!props.scoreboard.length==0) {
+    //         correct = props.scoreboard[props.id].correct
+    //     }
+    //     return (
+    //         <h3>Correct: {correct}</h3>
+    //     )      
+    // }
     return (
         <div className="trivia">
             <h3>{props.trivia[props.id].question}</h3>
             {multipleChoices? multipleChoices : <div></div>}
+            {/* {correctAnswer()} */}
             <hr />
         </div>
     )
