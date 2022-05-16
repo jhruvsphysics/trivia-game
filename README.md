@@ -16,6 +16,10 @@ Enjoy!
 
 <img src="https://github.com/jhruvsphysics/readme-assets/blob/main/projects/quizzicle_dont_get_got.gif">
 
+To update, simply run:
+
+### `git pull upstream main`
+
 ## Available Scripts
 
 In the project directory, you can run:
